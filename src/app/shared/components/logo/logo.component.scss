@@ -1,0 +1,8 @@
+  .logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    .logo-image {
+      height: clamp(1rem, 2.5vw, 1.8rem);
+    }
+  }

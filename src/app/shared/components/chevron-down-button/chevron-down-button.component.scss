@@ -1,0 +1,26 @@
+.icon-button {
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  .icon-button:hover {
+    transform: scale(1.1);
+  }
+}
+
+.icon-button svg {
+  transition: transform 0.3s ease;
+}
+
+.icon-button:hover svg {
+  transform: scale(1.1);
+}
+
+.white-stroke path {
+  stroke: #ffffff;
+}
+
+.blue-stroke path {
+  stroke: var(--primary);
+}

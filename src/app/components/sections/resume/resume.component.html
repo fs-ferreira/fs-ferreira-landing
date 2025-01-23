@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="cards">
+    @for (card of cards; track $index) {
+    <div class="card-container">
+      <p class="intro">{{ card.intro }}</p>
+      <div class="card">
+        <h1>{{ card.title }}</h1>
+        <p>{{ card.subtitle }}</p>
+      </div>
+    </div>
+    }
+  </div>
+
+  <h2>Logo abaixo estão as maneiras em que posso ser útil para você!</h2>
+
+  <chevron-down (click)="onChevronClick()"></chevron-down>
+</div>

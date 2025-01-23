@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 clamp(2rem, 3vw, 4rem);
+  overflow: hidden;
+
+  h2,
+  h4,
+  p {
+    color: var(--primary);
+    text-align: center;
+  }
+
+  .main-image {
+    width: max(240px, 30%);
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .separator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin: 16px 0;
+
+      .line {
+        flex-grow: 1;
+        height: 1px;
+        background-color: var(--primary, #00a6ed);
+        border: none;
+      }
+      p {
+        margin: 0;
+        font-size: 1rem;
+        white-space: nowrap;
+      }
+    }
+
+    span {
+      font-weight: bolder;
+    }
+
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: max(20px, 3vw);
+
+      .social-logo {
+        width: max(60px, 8vw);
+        transition: all 0.3s ease, border-color 0.3s ease;
+      }
+
+      .social-logo:hover {
+        transform: scale(1.05) !important;
+      }
+    }
+  }
+}
