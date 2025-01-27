@@ -32,7 +32,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    width: clamp(250px, 33vw, 400px);
+    width: max(250px, 25vw);
     height: 48dvh;
     background-color: white;
     color: var(--primary);
@@ -46,9 +46,8 @@
     }
 
     ul {
-      padding: 24px;
+      padding: 4% 12%;
       list-style-type: disc;
-      margin: 0 0 0 16px;
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -65,7 +64,7 @@
 
     li {
       font-weight: 700;
-      font-size: clamp(1rem, 2vw, 1.1rem);
+      font-size: max(1rem, 1.2vw);
     }
   }
 }

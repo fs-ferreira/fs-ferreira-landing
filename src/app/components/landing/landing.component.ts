@@ -17,27 +17,18 @@ export class LandingComponent {
   @ViewChild('pathsContainer') pathsContainer!: PathsComponent;
   @ViewChild('contactContainer') contactContainer!: ContactComponent;
 
-  scrollToResume() {
-    if (this.resumeContainer) {
-      scrollToElement(this.resumeContainer.elementRef.nativeElement, 1000);
-    }
-  }
-
-  scrollToPaths() {
-    if (this.pathsContainer) {
+  private calculateScrollScale(container: any): number {
+    if (container === this.pathsContainer) {
       const deviceWidth = window.innerWidth;
-      const scrollScale = deviceWidth > 800 ? 1.1 : 1.02;
-      scrollToElement(
-        this.pathsContainer.elementRef.nativeElement,
-        1000,
-        scrollScale
-      );
+      return deviceWidth > 800 ? 1.1 : 1.02;
     }
+    return 1;
   }
 
-  scrollToContact() {
-    if (this.contactContainer) {
-      scrollToElement(this.contactContainer.elementRef.nativeElement, 1000, 1);
+  scrollTo(container: any) {
+    if (container) {
+      const scale = this.calculateScrollScale(container);
+      scrollToElement(container.elementRef.nativeElement, 1000, scale);
     }
   }
 }

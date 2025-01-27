@@ -1,8 +1,8 @@
-<app-header (scrollToResume)="scrollToResume()"/>
+<app-header (scrollToResume)="scrollTo(resumeContainer)"/>
 
-<app-resume #resumeContainer (scrollToPaths)="scrollToPaths()"/>
+<app-resume #resumeContainer (scrollToPaths)="scrollTo(pathsContainer)"/>
 
-<app-paths #pathsContainer (scrollToContact)="scrollToContact()"/>
+<app-paths #pathsContainer (scrollToContact)="scrollTo(contactContainer)"/>
 
 <app-contact #contactContainer/>
 
