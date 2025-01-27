@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     width: max(250px, 25vw);
-    height: 48dvh;
+    min-height: 48dvh;
     background-color: white;
     color: var(--primary);
     border-radius: 20px;
@@ -46,16 +46,13 @@
     }
 
     ul {
-      padding: 4% 12%;
+      padding: 12%;
       list-style-type: disc;
       display: flex;
       flex-direction: column;
       height: 100%;
       justify-content: start;
       gap: 40px;
-      overflow: auto;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
 
       ::-webkit-scrollbar {
         display: none;
@@ -64,7 +61,7 @@
 
     li {
       font-weight: 700;
-      font-size: max(1rem, 1.2vw);
+      font-size: max(1rem, 1.3vw);
     }
   }
 }

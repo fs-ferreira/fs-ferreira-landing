@@ -20,7 +20,7 @@ export class LandingComponent {
   private calculateScrollScale(container: any): number {
     if (container === this.pathsContainer) {
       const deviceWidth = window.innerWidth;
-      return deviceWidth > 800 ? 1.1 : 1.02;
+      return deviceWidth > 800 ? 1.15 : 1.02;
     }
     return 1;
   }
