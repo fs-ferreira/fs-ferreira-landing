@@ -2,11 +2,7 @@
   <h2>
     Converse comigo e vamos desenvolver suas habilidades para o próximo nível!
   </h2>
-  <img
-    src="assets/img/message_me.svg"
-    alt="Message Me image"
-    class="main-image"
-  />
+  <app-message-me></app-message-me>
 
   <div class="contact-section">
     <h4>
@@ -18,22 +14,30 @@
       <hr class="line" />
     </div>
     <div class="socials">
-      <a [href]="linkedinUrl" target="_blank" rel="noopener noreferrer">
-        <img
-          src="assets/icons/linkedin.svg"
-          alt="LinkedIn"
-          class="social-logo"
-        />
+      <a
+        [href]="linkedinUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-logo"
+      >
+        <fa-icon [icon]="linkedinIcon"></fa-icon>
       </a>
-      <a [href]="instagramUrl" target="_blank" rel="noopener noreferrer">
-        <img
-          src="assets/icons/instagram.svg"
-          alt="Instagram"
-          class="social-logo"
-        />
+      <a
+        [href]="instagramUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-logo"
+      >
+        <fa-icon [icon]="instagramIcon"></fa-icon>
       </a>
-      <a [href]="githubUrl" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icons/github.svg" alt="GitHub" class="social-logo" />
+
+      <a
+        [href]="githubUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-logo"
+      >
+        <fa-icon [icon]="githubIcon"></fa-icon>
       </a>
     </div>
   </div>
